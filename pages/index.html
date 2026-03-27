@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title> La Tazza d'Oro </title>
+    
+</head>
+<body>
+    <header class="topo">
+        <nav class="logo">
+            <img class="logotopoimg" src="../assents/logo.png" alt="imagem-principal-do-header-logo-png">
+            <p class="titulodestaque"> La Tazza d'Oro </p>
+        </nav>
+
+        <nav class="menu">
+            <a class="itensmenu" href="#"> Home </a>
+            <a class="itensmenu" href="#"> Menu </a>
+            <a class="itensmenu" href="#"> Produtos </a>
+            <a class="itensmenu" href="#"> Contato </a>
+            <a class="itensmenu" href="#"> Sobre Nós </a>
+        </nav>
+
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <div class="container_banner">
+            <img class="banner_principal" src="../assents/banner01.png" alt="banner-principal-da-pagina-sction-main">
+
+            <div class="textos_de_banner">
+            <h2 class="texto_banner"> Sabor em cada xícara </h2>
+            <p class="texto2_banner"> Descubra o melhor da La Tazza d'Oro. O melhor café Italiano do Estado de São Paulo! </p>
+            </div>
+        </div>
+
+        <!-- ===============| SECTION PREMIUM BREWS |=============== -->
+        <section class="premium_brews">
+            <div class="titulo_secao">
+                <h2 class="titulo_premium"> PREMIUM BREWS </h2>
+            </div>
+
+            <div class="container_coffes">
+                <!-- CARD 1-->
+                <div class="card_cafe1">
+                    <img src="../assents/mocha.png" alt="imagem_xicara_mocha.png_section_main">
+                    <h3> MOCHA DELIGHT </h3>
+                    <p class="preco"> R$ 14,99 </p>
+                    <a class="btn-book" href="#"> RESERVE JÁ </a>
+                </div>
+
+                <!-- CARD 2-->
+                 <div class="card_cafe">
+                    <img src="../assents/java.png" alt="imagem-xicara-java.png-section-main">
+                    <h3> JAVA BLISS </h3>
+                    <p class="preco"> R$ 14,99 </p>
+                    <a class="btn-book" href="#"> RESERVE JÁ </a>
+                 </div>
+
+                 <!-- CARD 3-->
+                  <div class="card_cafe">
+                    <img src="../assents/espresso.png" alt="imagem-xicara-expresso.png-section-main">
+                    <h3> ESPRESSO EUPHORIA </h3>
+                    <p class="preco"> R$ 13,99 </p>
+                    <a class="btn-book" href="#"> RESERVE JÁ </a>
+                  </div>
+            </div>
+        </section>
+
+        <!-- ===============| SECTION PRATOS GOURMET |=============== -->
+        <section class="pratos_gourmet">
+            <div class="titulo_secao2">
+                <h2 class="titulo_gourmet"> PRATOS GOURMET </h2>
+            </div>
+
+            <div class="container_gourmet">
+                <!-- CARD 1-->
+                 <div class="card_gourmet">
+                    <img src="../assents/" alt="">
+                    <h3></h3>
+                    <p class="preco"> R$ 23,99 </p>
+                    <a class="btn-gourm"> RESERVE JÁ </a>
+                 </div>
+
+                <!-- CARD 2-->
+                 <div class="card_gourmet">
+                    <img src="../assents/" alt="">
+                    <h3></h3>
+                    <p class="preco"> R$ 23,99 </p>
+                    <a class="btn-gourm" data-bs-toggle="offcanvas" href="#offcanvas" role="button"> RESERVE JÁ </a>
+                 </div>
+
+        <!-- Offcanvas correspondente -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMocha" aria-labelledby="offcanvasMochaLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMochaLabel">Detalhes: Mocha Delight</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+            </div>
+            <div class="offcanvas-body">
+                O Mocha Delight é preparado com café espresso, chocolate cremoso e leite vaporizado. Uma combinação perfeita para quem gosta de sabor intenso e doce.
+            </div>
+        </div>
+
+                <!-- CARD 3--> 
+                 <div class="card_gourmet">
+                    <img src="../assents/" alt=""> 
+                    <p class="preco"> R$ 23,99 </p>
+                    <a class="btn-gourm" href="#"> RESERVE JÁ </a>
+                 </div>
+
+                <!-- CARD 4--> 
+                 <div class="card_gourmet">
+                    <img src="../assents/" alt="">
+                    <h3></h3>
+                    <p class="preco"> R$ 23,99 </p>
+                    <a class="btn-gourm" href="#"> RESERVE JÁ </a>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!--<footer class="rodape">
+        <img class="imgdorodape" src="../assents/logo.png" alt="imagem-principal-do-footer-logo-png">
+        <h2 class="titulorodapedestaque"> La Tazza dOro </h2>
+    </footer>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

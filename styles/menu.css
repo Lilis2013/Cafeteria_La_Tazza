@@ -1,0 +1,108 @@
+:root {
+    ---color1: #000000;
+    ---color2: #593E25;
+    ---color3: #A6754B;
+    ---color4: #D9A679;
+    ---color5: #8C5B3F;
+    ---color6: #BF8665;
+    ---color7: #F2CEAE;
+    ---color8: #fcf5f5;
+    ---color9: #2c241e;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+}
+
+body {
+    background-color: var(---color9);
+}
+
+
+/*=============== SECTION TOPO | HEADER =============== */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../assents/menu/bannermenu1.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logotopoimg {
+    width: 8rem;
+    margin-left: 4rem;
+    height: auto;
+}
+
+.titulodestaque {
+    color: var(---color8);
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    gap: 4rem;
+    margin-right: 4rem;
+}
+
+.menu :hover {
+    border-bottom: 0.2rem solid var(---color4);
+    color: var(---color8);
+}
+
+.itensmenu {
+    gap: 6rem;
+    text-decoration: none;
+    color: var(---color7);
+    font-size: 1.2rem;
+}
+
+/*=========== NAV-BAR =========== */
+.btn-outline-success {
+    border-radius: 0.8rem;
+    padding: 0.6rem 1.5rem;
+    margin-left: 0.7rem;
+    z-index: 2;
+    color: var(---color4);
+    transition: 0.3s;
+}
+
+.btn-outline-success:hover {
+    background-color: var(---color3);
+    border-color: var(---color3);
+}
+
+.form-control {
+    border-radius: 0.8rem;
+    width: 15rem;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid var(---color4);
+    border: 1px solid var(---color8);
+    color: var(---color8);
+}
+
+.form-control::placeholder {
+    color: var(---color2);
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(---color7);
+    box-shadow: 0 0 0 0.25rem rgba(242, 206, 174, 0.25);
+    color: var(---color8);
+}
+
+.navbar {
+    background-color: transparent !important;
+    padding-right: 2rem;
+}
